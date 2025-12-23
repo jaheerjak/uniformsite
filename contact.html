@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MONDFRID UNIFORMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="MONDFRID UNIFORMS Logo"></a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-phone">
+          <a href="tel:+917092628108" aria-label="Call 7092628108">
+            <span class="phone-icon" aria-hidden="true">☎</span>
+            <span class="phone-text">7092628108</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container">
+    <h1 class="section-title">Contact Us</h1>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <h2 style="color: var(--navy); margin-bottom: 1rem;">Get in Touch</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">Fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company/School Name</label>
+            <input type="text" id="company" name="company" placeholder="Your company or school name">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91 70000 00000">
+          </div>
+
+          <div class="form-group">
+            <label for="uniformType">Type of Uniform Needed</label>
+            <select id="uniformType" name="uniformType">
+              <option value="">Select a type</option>
+              <option value="corporate">Corporate Uniforms</option>
+              <option value="industrial">Industrial / Factory Uniforms</option>
+              <option value="hospital">Hospital Uniforms</option>
+              <option value="school">School Uniforms</option>
+              <option value="hospitality">Hospitality / Hotel Uniforms</option>
+              <option value="events">Events Uniforms</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <select id="quantity" name="quantity">
+              <option value="1-50">1–50</option>
+              <option value="50-200">50–200</option>
+              <option value="200-500">200–500</option>
+              <option value="500+">500+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your requirements, sizes, colors, logo, deadline, etc."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="button" id="clearBtn" class="btn btn-secondary">Clear</button>
+          </div>
+          <div id="formStatus" class="small muted" aria-live="polite" style="margin-top: 1rem; color: var(--text-light);"></div>
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <h2 style="color: var(--navy); margin-bottom: 1rem;">Contact Details</h2>
+        <div class="contact-info">
+          <p><strong>MONDFRID UNIFORMS</strong></p>
+          <p>📍 No. 37-B, Kotrampalayam Street,<br>Little Kanchipuram, Kancheepuram – 631501</p>
+          <p>📞 <a href="tel:+917092628108">7092628108</a></p>
+          <p>📧 <a href="mailto:info@mondfriduniforms.com">info@mondfriduniforms.com</a></p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <h3 style="color: var(--navy); margin-bottom: 1rem; font-size: 1.1rem;">Business Hours</h3>
+          <p style="color: var(--text-light);">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+          <p style="color: var(--text-light);">Sunday: Closed</p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <a href="https://wa.me/917092628108" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+            <img src="images/whatsappicon.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <h3 style="color: var(--navy); margin-bottom: 1rem; font-size: 1.1rem;">Location</h3>
+          <iframe 
+            title="MONDFRID UNIFORMS Location" 
+            width="100%" 
+            height="200" 
+            style="border:0; border-radius: 8px;" 
+            loading="lazy" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.123456789!2d79.7!3d12.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDQ4JzAwLjAiTiA3OcKwNDInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About</h3>
+        <p>MONDFRID UNIFORMS specializes in high-quality corporate and industrial uniforms, ensuring comfort, durability, and professional style for every workplace.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Product Categories</h3>
+        <ul>
+          <li><a href="products.html">Corporate Uniforms</a></li>
+          <li><a href="products.html">Industrial Uniforms</a></li>
+          <li><a href="products.html">Hospital Uniforms</a></li>
+          <li><a href="products.html">School Uniforms</a></li>
+          <li><a href="products.html">Hospitality Uniforms</a></li>
+          <li><a href="products.html">Events Uniforms</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Details</h3>
+        <p>📍 No. 37-B, Kotrampalayam Street, Little Kanchipuram, Kancheepuram – 631501</p>
+        <p>📞 <a href="tel:+917092628108">7092628108</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 MONDFRID UNIFORMS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp Button -->
+  <a href="https://wa.me/917092628108" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="images/whatsappicon.png" alt="WhatsApp">
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
