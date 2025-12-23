@@ -282,6 +282,8 @@ nav {
   font-weight: 700;
   padding: 0.15rem 0;
   white-space: nowrap;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .highlight-icon {
@@ -362,12 +364,14 @@ section {
 }
 
 .why-choose-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.55rem;
   color: var(--navy);
   font-weight: 700;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .why-choose-icon {
@@ -885,14 +889,29 @@ footer {
 
   .highlights-row {
     justify-content: center;
+    gap: 15px;
   }
 
   .highlight {
     white-space: normal;
+    flex: 0 1 auto;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
   }
 
   .why-choose-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .why-choose-item {
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.5rem;
+  }
+
+  .why-choose-text {
+    font-size: 0.9rem;
   }
 
   .about-content {
@@ -929,8 +948,24 @@ footer {
     padding: 0.6rem 1rem;
   }
 
+  .highlights-row {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight {
+    width: 100%;
+    justify-content: center;
+    padding: 0.4rem 0;
+  }
+
   section {
     padding: 2rem 0;
+  }
+
+  .why-choose-section .container {
+    padding: 1.5rem 1rem;
   }
 
   .products-grid,
@@ -953,6 +988,22 @@ footer {
 
   .why-choose-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .why-choose-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.75rem;
+    text-align: left;
+  }
+
+  .why-choose-icon {
+    font-size: 1.4rem;
+  }
+
+  .why-choose-text {
+    font-size: 0.95rem;
   }
 }
 
